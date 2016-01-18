@@ -6,9 +6,9 @@
 //  Copyright © 2016年 chikatokitamuro. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ViewController.h"//プロジェクト内のファイル呼び出し
 
-#import <AVFoundation/AVFoundation.h>//音声ファイル
+#import <AVFoundation/AVFoundation.h>//音声ライブラリの呼び出し
 
 @interface ViewController ()
 @property (strong, nonatomic) NSArray *soundTable;//音声ファイル
@@ -36,7 +36,7 @@ float  seikaisu;
     
     self.mondai1.text = @"問題１、マツコとキムタクは高校１年の時、同級生であった";
     
-    self.soundTable = @[@"C", @"C#", @"D", @"D#", @"E", @"F", @"F#", @"G", @"G#", @"A", @"A#", @"B", @"C'"];
+    self.soundTable = @[@"sei", @"fusei#"];
     
 }
 
@@ -128,14 +128,14 @@ float  seikaisu;
     self.seitouritu.text = [NSString stringWithFormat:@"正解率は%lf％です",seikaisu/5*100]
     ;
     //正解時の音声ファイルを鳴らす
-    [self playSound];
+    [self playSound:()];//引数は何を持って来れば良いのでしょうか また音楽ファイルの提出はどうすれば良いのでしょうか
 }
 
 - (void)fuseikai {
     // 不正解だった時の処理
     self.kaitou.text = @"不正解です";
     //不正解時の音声ファイルを鳴らす
-    [self playSound];
+    [self playSound:()];
 
 }
 
