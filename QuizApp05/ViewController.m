@@ -128,14 +128,16 @@ float  seikaisu;
     self.seitouritu.text = [NSString stringWithFormat:@"正解率は%lf％です",seikaisu/5*100]
     ;
     //正解時の音声ファイルを鳴らす
-    [self playSound:()];//引数は何を持って来れば良いのでしょうか また音楽ファイルの提出はどうすれば良いのでしょうか
+    NSString *string = @"sound";
+    [self playSound:string];
 }
 
 - (void)fuseikai {
     // 不正解だった時の処理
     self.kaitou.text = @"不正解です";
+    NSString *string = @"sound";
     //不正解時の音声ファイルを鳴らす
-    [self playSound:()];
+    [self playSound:string];
 
 }
 
@@ -169,3 +171,10 @@ float  seikaisu;
 
 
 @end
+
+/*シュミレートすると以下のメッセージがでてできません
+ int main(int argc, char * argv[]) {
+ @autoreleasepool {
+ return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+ }
+ }*/
