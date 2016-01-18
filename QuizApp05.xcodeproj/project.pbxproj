@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE06B8661C4D21A500557FA7 /* shot-struck1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE06B8651C4D21A400557FA7 /* shot-struck1.mp3 */; };
+		BE06B8681C4D21BF00557FA7 /* bomb1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE06B8671C4D21BF00557FA7 /* bomb1.mp3 */; };
 		BE794A1A1C48C240008E3E84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE794A191C48C240008E3E84 /* main.m */; };
 		BE794A1D1C48C240008E3E84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE794A1C1C48C240008E3E84 /* AppDelegate.m */; };
 		BE794A201C48C240008E3E84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE794A1F1C48C240008E3E84 /* ViewController.m */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE06B8651C4D21A400557FA7 /* shot-struck1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "shot-struck1.mp3"; sourceTree = "<group>"; };
+		BE06B8671C4D21BF00557FA7 /* bomb1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bomb1.mp3; sourceTree = "<group>"; };
 		BE794A151C48C240008E3E84 /* QuizApp05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp05.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE794A191C48C240008E3E84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE794A1B1C48C240008E3E84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 				BE794A1F1C48C240008E3E84 /* ViewController.m */,
 				BE794A211C48C240008E3E84 /* Main.storyboard */,
 				BE794A241C48C240008E3E84 /* Assets.xcassets */,
+				BE06B8671C4D21BF00557FA7 /* bomb1.mp3 */,
+				BE06B8651C4D21A400557FA7 /* shot-struck1.mp3 */,
 				BE794A261C48C240008E3E84 /* LaunchScreen.storyboard */,
 				BE794A291C48C240008E3E84 /* Info.plist */,
 				BE794A181C48C240008E3E84 /* Supporting Files */,
@@ -137,8 +143,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE06B8681C4D21BF00557FA7 /* bomb1.mp3 in Resources */,
 				BE794A281C48C240008E3E84 /* LaunchScreen.storyboard in Resources */,
 				BE794A251C48C240008E3E84 /* Assets.xcassets in Resources */,
+				BE06B8661C4D21A500557FA7 /* shot-struck1.mp3 in Resources */,
 				BE794A231C48C240008E3E84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +307,7 @@
 				BE794A2E1C48C240008E3E84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -26,7 +26,7 @@
 
 @implementation ViewController
 
-int  countNumber;//問題の順番　最初は０番目
+int  countNumber;//問題の順番　最初の問題は０番目　case 0
 
 float  seikaisu;
 
@@ -49,7 +49,10 @@ float  seikaisu;
 - (void)playSound:(NSString*)scaleName
     {
         //音楽ファイル名を作成
-        NSString *soundFileName = [NSString stringWithFormat:@"piano_%@",scaleName];
+        NSString *soundFileName = [NSString stringWithFormat:@"shot_%@",scaleName];
+        
+        //音楽ファイル名を「shot_sound」とするならば、引数scaleNameは「sound」となる
+        //「@"shot_%@",scaleName」で引数scaleNameが「%@」に代入され、「shot_sound」となる
         //音楽ファイルのファイルパス(音楽ファイルがデータ上どこにあるか)を作成
         NSBundle *bundle = [NSBundle mainBundle];
         NSString *path = [bundle pathForResource:soundFileName ofType:@"mp3"];
@@ -65,7 +68,7 @@ float  seikaisu;
 
 - (IBAction)maruoshi:(id)sender {
     switch  (countNumber) {
-        case 0:
+        case 0://問い１の時の処理を書く　maruを押した時の処理
             // 最初の問題は丸が正解なので、正解扱いにする
             [self seikai];//seikai時の処置を呼び出す
             seikaisu++;//seikaisuを一つカウントする
@@ -93,6 +96,9 @@ float  seikaisu;
     
 
 }
+
+
+
 
 - (IBAction)pekeoshi:(id)sender {
     switch (countNumber) {
@@ -128,8 +134,8 @@ float  seikaisu;
     self.seitouritu.text = [NSString stringWithFormat:@"正解率は%lf％です",seikaisu/5*100]
     ;
     //正解時の音声ファイルを鳴らす
-    NSString *string = @"sound";
-    [self playSound:string];
+    NSString *musicName = @"sound";
+    [self playSound:musicName];
 }
 
 - (void)fuseikai {
@@ -172,9 +178,4 @@ float  seikaisu;
 
 @end
 
-/*シュミレートすると以下のメッセージがでてできません
- int main(int argc, char * argv[]) {
- @autoreleasepool {
- return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
- }
- }*/
+/*ダウンロードした音楽ファイルはどのようにプログラムに反映させるのでしょうか*/
