@@ -34,7 +34,7 @@ float  seikaisu;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.mondai1.text = @"問題１、マツコとキムタクは高校１年の時、同級生であった";
+    self.mondai1.text = @"問題１、マツコとキムタクは高校１年の時、同級生であった";//mondai1に入力
     
     self.soundTable = @[@"sei", @"fusei#"];
     
@@ -49,10 +49,10 @@ float  seikaisu;
 - (void)playSound:(NSString*)scaleName
     {
         //音楽ファイル名を作成
-        NSString *soundFileName = [NSString stringWithFormat:@"shot_%@",scaleName];
+        NSString *soundFileName = [NSString stringWithFormat:@"koukaonn_%@",scaleName];
         
-        //音楽ファイル名を「shot_sound」とするならば、引数scaleNameは「sound」となる
-        //「@"shot_%@",scaleName」で引数scaleNameが「%@」に代入され、「shot_sound」となる
+        //音楽ファイル名を「koukaonn_sound」とするならば、引数scaleNameは「sound」となる
+        //「@"koukaonn_%@",scaleName」で引数scaleNameが「%@」に代入され、「koukaonn_sound」となる
         //音楽ファイルのファイルパス(音楽ファイルがデータ上どこにあるか)を作成
         NSBundle *bundle = [NSBundle mainBundle];
         NSString *path = [bundle pathForResource:soundFileName ofType:@"mp3"];
@@ -134,14 +134,14 @@ float  seikaisu;
     self.seitouritu.text = [NSString stringWithFormat:@"正解率は%lf％です",seikaisu/5*100]
     ;
     //正解時の音声ファイルを鳴らす
-    NSString *musicName = @"sound";
+    NSString *musicName = @"shot-struck1";//ダウンロードしたファイル
     [self playSound:musicName];
 }
 
 - (void)fuseikai {
     // 不正解だった時の処理
     self.kaitou.text = @"不正解です";
-    NSString *string = @"sound";
+    NSString *string = @"bomb1";
     //不正解時の音声ファイルを鳴らす
     [self playSound:string];
 
@@ -178,4 +178,4 @@ float  seikaisu;
 
 @end
 
-/*ダウンロードした音楽ファイルはどのようにプログラムに反映させるのでしょうか*/
+
