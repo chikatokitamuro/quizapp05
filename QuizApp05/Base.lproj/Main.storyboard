@@ -17,13 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5LQ-j8-xti">
-                                <rect key="frame" x="180" y="33" width="241" height="68"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDu-Zr-ps9">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDu-Zr-ps9">
                                 <rect key="frame" x="180" y="141" width="83" height="71"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="78"/>
                                 <state key="normal" title="○">
@@ -33,19 +27,19 @@
                                     <action selector="maruoshi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1w0-hf-07Y"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="解答" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYn-kY-m6j">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="解答" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYn-kY-m6j">
                                 <rect key="frame" x="180" y="265" width="241" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正答率" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9a-8N-5iZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="正答率" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9a-8N-5iZ">
                                 <rect key="frame" x="175" y="369" width="251" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qm7-Pi-hQb">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qm7-Pi-hQb">
                                 <rect key="frame" x="322" y="132" width="83" height="71"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="122"/>
                                 <state key="normal" title="×">
@@ -55,8 +49,31 @@
                                     <action selector="pekeoshi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3o1-ys-qak"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5LQ-j8-xti">
+                                <rect key="frame" x="180" y="33" width="241" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.16059723149999999" green="0.68511284719999999" blue="0.3146297052" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nDu-Zr-ps9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="180" id="9ea-q5-OzJ"/>
+                            <constraint firstAttribute="trailing" secondItem="gYn-kY-m6j" secondAttribute="trailing" constant="179" id="AL9-bl-raD"/>
+                            <constraint firstAttribute="trailing" secondItem="c9a-8N-5iZ" secondAttribute="trailing" constant="174" id="FGg-yL-DRe"/>
+                            <constraint firstAttribute="trailing" secondItem="5LQ-j8-xti" secondAttribute="trailing" constant="179" id="IMa-fR-tEf"/>
+                            <constraint firstItem="5LQ-j8-xti" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="Jdq-Kh-jeL"/>
+                            <constraint firstItem="nDu-Zr-ps9" firstAttribute="top" secondItem="5LQ-j8-xti" secondAttribute="bottom" constant="40" id="N8a-BJ-KLb"/>
+                            <constraint firstItem="c9a-8N-5iZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="175" id="R0m-Is-f7Z"/>
+                            <constraint firstItem="gYn-kY-m6j" firstAttribute="top" secondItem="nDu-Zr-ps9" secondAttribute="bottom" constant="53" id="RdV-jm-yBa"/>
+                            <constraint firstItem="gYn-kY-m6j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="180" id="doU-lF-N7n"/>
+                            <constraint firstItem="c9a-8N-5iZ" firstAttribute="top" secondItem="gYn-kY-m6j" secondAttribute="bottom" constant="56" id="ltW-AI-fNb"/>
+                            <constraint firstItem="Qm7-Pi-hQb" firstAttribute="leading" secondItem="nDu-Zr-ps9" secondAttribute="trailing" constant="59" id="nC1-lM-4xv"/>
+                            <constraint firstItem="Qm7-Pi-hQb" firstAttribute="top" secondItem="5LQ-j8-xti" secondAttribute="bottom" constant="31" id="q8P-xk-Xb7"/>
+                            <constraint firstItem="gYn-kY-m6j" firstAttribute="top" secondItem="Qm7-Pi-hQb" secondAttribute="bottom" constant="62" id="uTU-Uc-IRL"/>
+                            <constraint firstAttribute="trailing" secondItem="Qm7-Pi-hQb" secondAttribute="trailing" constant="195" id="wym-JI-eBE"/>
+                            <constraint firstItem="5LQ-j8-xti" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="180" id="ykn-6Y-EhX"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="kaitou" destination="gYn-kY-m6j" id="YJe-Me-q7t"/>

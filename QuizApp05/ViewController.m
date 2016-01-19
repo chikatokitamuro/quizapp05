@@ -49,13 +49,14 @@ float  seikaisu;
 - (void)playSound:(NSString*)scaleName
     {
         //音楽ファイル名を作成
-        NSString *soundFileName = [NSString stringWithFormat:@"koukaonn_%@",scaleName];
+        //NSString *soundFileName = [NSString stringWithFormat:@"koukaonn_%@",scaleName];
         
         //音楽ファイル名を「koukaonn_sound」とするならば、引数scaleNameは「sound」となる
         //「@"koukaonn_%@",scaleName」で引数scaleNameが「%@」に代入され、「koukaonn_sound」となる
         //音楽ファイルのファイルパス(音楽ファイルがデータ上どこにあるか)を作成
         NSBundle *bundle = [NSBundle mainBundle];
-        NSString *path = [bundle pathForResource:soundFileName ofType:@"mp3"];
+        NSString *path = [bundle pathForResource:scaleName ofType:@"mp3"];
+        //NSString *path = [bundle pathForResource:soundFileName ofType:@"mp3"];
         NSURL *url = [NSURL fileURLWithPath:path];
         //エラーを受け取る変数の準備
         NSError *error = nil;
