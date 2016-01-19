@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDu-Zr-ps9">
-                                <rect key="frame" x="180" y="141" width="83" height="71"/>
+                                <rect key="frame" x="138" y="149" width="83" height="71"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="78"/>
                                 <state key="normal" title="○">
                                     <color key="titleColor" red="0.056049261349999997" green="0.080854259780000007" blue="0.54091698229999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,8 +39,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qm7-Pi-hQb">
-                                <rect key="frame" x="322" y="132" width="83" height="71"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5LQ-j8-xti">
+                                <rect key="frame" x="180" y="33" width="241" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qm7-Pi-hQb">
+                                <rect key="frame" x="338" y="141" width="83" height="71"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="122"/>
                                 <state key="normal" title="×">
                                     <color key="titleColor" red="0.056049261349999997" green="0.080854259780000007" blue="0.54091698229999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,30 +55,17 @@
                                     <action selector="pekeoshi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3o1-ys-qak"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5LQ-j8-xti">
-                                <rect key="frame" x="180" y="33" width="241" height="68"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.16059723149999999" green="0.68511284719999999" blue="0.3146297052" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="nDu-Zr-ps9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="180" id="9ea-q5-OzJ"/>
-                            <constraint firstAttribute="trailing" secondItem="gYn-kY-m6j" secondAttribute="trailing" constant="179" id="AL9-bl-raD"/>
-                            <constraint firstAttribute="trailing" secondItem="c9a-8N-5iZ" secondAttribute="trailing" constant="174" id="FGg-yL-DRe"/>
-                            <constraint firstAttribute="trailing" secondItem="5LQ-j8-xti" secondAttribute="trailing" constant="179" id="IMa-fR-tEf"/>
-                            <constraint firstItem="5LQ-j8-xti" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="Jdq-Kh-jeL"/>
-                            <constraint firstItem="nDu-Zr-ps9" firstAttribute="top" secondItem="5LQ-j8-xti" secondAttribute="bottom" constant="40" id="N8a-BJ-KLb"/>
-                            <constraint firstItem="c9a-8N-5iZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="175" id="R0m-Is-f7Z"/>
-                            <constraint firstItem="gYn-kY-m6j" firstAttribute="top" secondItem="nDu-Zr-ps9" secondAttribute="bottom" constant="53" id="RdV-jm-yBa"/>
-                            <constraint firstItem="gYn-kY-m6j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="180" id="doU-lF-N7n"/>
-                            <constraint firstItem="c9a-8N-5iZ" firstAttribute="top" secondItem="gYn-kY-m6j" secondAttribute="bottom" constant="56" id="ltW-AI-fNb"/>
-                            <constraint firstItem="Qm7-Pi-hQb" firstAttribute="leading" secondItem="nDu-Zr-ps9" secondAttribute="trailing" constant="59" id="nC1-lM-4xv"/>
-                            <constraint firstItem="Qm7-Pi-hQb" firstAttribute="top" secondItem="5LQ-j8-xti" secondAttribute="bottom" constant="31" id="q8P-xk-Xb7"/>
-                            <constraint firstItem="gYn-kY-m6j" firstAttribute="top" secondItem="Qm7-Pi-hQb" secondAttribute="bottom" constant="62" id="uTU-Uc-IRL"/>
-                            <constraint firstAttribute="trailing" secondItem="Qm7-Pi-hQb" secondAttribute="trailing" constant="195" id="wym-JI-eBE"/>
-                            <constraint firstItem="5LQ-j8-xti" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="180" id="ykn-6Y-EhX"/>
+                            <constraint firstItem="Qm7-Pi-hQb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="79" id="0kg-p1-XJp"/>
+                            <constraint firstItem="nDu-Zr-ps9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="2km-0M-QFJ"/>
+                            <constraint firstItem="Qm7-Pi-hQb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="Rce-nX-15d"/>
+                            <constraint firstItem="5LQ-j8-xti" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ew3-K4-2du"/>
+                            <constraint firstItem="c9a-8N-5iZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tTj-Vo-2yQ"/>
+                            <constraint firstItem="nDu-Zr-ps9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vVZ-y4-LAG"/>
+                            <constraint firstItem="Qm7-Pi-hQb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ytO-E6-Rrp"/>
+                            <constraint firstItem="gYn-kY-m6j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zEW-ZZ-Jim"/>
                         </constraints>
                     </view>
                     <connections>
