@@ -24,7 +24,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5LQ-j8-xti">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5LQ-j8-xti">
                                 <rect key="frame" x="180" y="28" width="241" height="68"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -39,7 +39,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qm7-Pi-hQb">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qm7-Pi-hQb">
                                 <rect key="frame" x="302" y="130" width="84" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="2HC-2U-Ogn"/>
@@ -53,8 +53,12 @@
                                     <action selector="pekeoshi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3o1-ys-qak"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDu-Zr-ps9">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDu-Zr-ps9">
                                 <rect key="frame" x="211" y="139" width="83" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="lXU-6O-8Za"/>
+                                    <constraint firstAttribute="height" constant="72" id="lvF-YO-sw0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="78"/>
                                 <state key="normal" title="○">
                                     <color key="titleColor" red="0.056049261349999997" green="0.080854259780000007" blue="0.54091698229999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -77,7 +81,9 @@
                             <constraint firstItem="5LQ-j8-xti" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="WNc-FW-N9U"/>
                             <constraint firstItem="gYn-kY-m6j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YZc-RU-stQ"/>
                             <constraint firstItem="5LQ-j8-xti" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="a7x-GP-YYh"/>
+                            <constraint firstItem="Qm7-Pi-hQb" firstAttribute="leading" secondItem="nDu-Zr-ps9" secondAttribute="trailing" constant="8" id="br0-6Y-iSZ"/>
                             <constraint firstItem="5LQ-j8-xti" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="crf-k3-Kf7"/>
+                            <constraint firstItem="nDu-Zr-ps9" firstAttribute="top" secondItem="5LQ-j8-xti" secondAttribute="bottom" constant="43" id="r4z-kB-QzX"/>
                             <constraint firstItem="gYn-kY-m6j" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rvv-DV-7IN"/>
                         </constraints>
                     </view>
