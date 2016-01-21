@@ -70,20 +70,23 @@ float  seikaisu;
 - (IBAction)maruoshi:(id)sender {
     switch  (countNumber) {
         case 0://問い１の時の処理を書く　maruを押した時の処理
+            seikaisu++;//seikaisuを一つカウントする
             // 最初の問題は丸が正解なので、正解扱いにする
             [self seikai];//seikai時の処置を呼び出す
-            seikaisu++;//seikaisuを一つカウントする
+            
             break;
         case 1:
-            [self seikai];
             seikaisu++;
+            [self seikai];
+            
             break;
         case 2:
             [self fuseikai];//fuseikai時の処置を呼び出す
             break;
         case 3:
-            [self seikai];
             seikaisu++;
+            [self seikai];
+            
             break;
         case 4:
             [self fuseikai];
@@ -110,15 +113,17 @@ float  seikaisu;
             [self fuseikai];
             break;
         case 2:
-            [self seikai];
             seikaisu++;
+            [self seikai];
+            
             break;
         case 3:
             [self fuseikai];
             break;
         case 4:
-            [self seikai];
             seikaisu++;
+            [self seikai];
+            
             break;
         default:
             break;
